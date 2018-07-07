@@ -1,0 +1,291 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Naomi Leow}{}{ 
+%\urlstyle{same}\href{https://github.com/naomilwx}{github.com/naomilwx}\\
+\href{mailto:naomileowwx@gmail.com}{naomileowwx@gmail.com}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.25\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Links}
+%Facebook:// \href{https://facebook/dd}{\bf dd} \\
+%Github:// \href{https://github.com/deedydas}{\bf naomilwx} \\
+%LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
+%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+%Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Experience}
+Building models with PyTorch. \\
+Fullstack Web Development with React frontend and Go, Rails or NodeJS backend\\
+API Design\\
+Mobile native app development with Flutter, React Native.
+\sectionsep
+
+
+\subsection{Programming}
+\location{Frequently used:}
+Python \textbullet{}  JavaScript \textbullet{} Ruby \\
+Go \textbullet{}  Java \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+\begin{tabular}{rl}
+2021 &GovTech Impact Award\\
+2015	 &Certificate of Distinction in \\ & Computer Security\\
+2015	 &Certificate of Merit in \\ &Programming Languages\\
+2013	 & NUS Student Achievement\\ &Award (Team)
+%2011	 & NUS High Leadership Commendation Award\\
+%2011	 & NUS High CCA Achievement Award\\
+\end{tabular}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Coursework}
+
+\subsection{Undergraduate}
+% \textbf{CS3216} Software Development on\\
+% evolving platforms\\
+\textbf{CS3243} Introduction to Artificial Intelligence \\
+\textbf{252-0220-00L} Learning and \\
+Intelligent Systems \\
+\textbf{252-5706-00L} Mathematical Foundations of \\
+Computer Graphics \& Vision \\
+\textbf{CS4247} Graphics Rendering Techniques \\
+% \textbf{CS3235} Information Security \\
+% \textbf{CS4236} Cryptography \\
+% \textbf{CS3217} Software Engineering on \\
+% Modern Platforms\\
+% \textbf{CP3208/9} Undergraduate Reasearch \\
+% in Computing\\
+
+\subsection{Graduate}
+\textbf{CS5446} AI Planning and Decision Making \\
+\textbf{CS5340} Uncertainty Modelling in AI \\
+\textbf{CSCS5562} Trustworthy Machine Learning \\
+\textbf{CS6240} Multimedia Analysis \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Experimental Systems \& Technology Lab}\\
+\descript{Government Technology Agency | Ministry of Education}
+\descript{Software Engineer}
+\location{July 2019 - July 2022}
+Developed a bus tracking app prototype in Flutter and Rails.\\
+Worked on a few Rails projects to help with Covid-19 operations.
+
+\sectionsep
+\runsubsection{Experimental Systems \& Technology Lab}\\
+\descript{National University of Singapore | Ministry of Education}
+\descript{Software Engineer}
+\location{July 2016 - June 2019}
+Developed SCMobile, a web application in React and Golang, that enables teachers to conduct some of their daily administrative tasks on their phones. \\
+Designed and oversaw the development of APIs over an existing system to retrieve the data needed by our applications.
+
+\sectionsep
+
+\runsubsection{Experimental Systems \& Technology Lab}\\
+\descript{Ministry of Education, Singapore}
+\descript{Intern}
+\location{Dec 2015 - Jan 2015}
+
+\sectionsep
+
+\runsubsection{NUS Student Tutor}\\
+\descript{CS1010S Programming Methodology (in Python)}
+\location{Jan 2014 - Nov 2014}
+%\vspace{9pt} %Hacky fix for awkward extra vertical space
+%\begin{tightemize}
+%\item Conducted tutorials and consultations
+%\item Graded programming assignments
+%\item Prepared course materials
+%\end{tightemize}
+
+\sectionsep
+
+%\runsubsection{Computing for Voluntary Welfare Organisation Summer Fellowship}
+%\location{May 2014 - Aug 2014}
+%\vspace{\topsep} %
+%\begin{tightemize}
+%\item Upgraded and added new features to the Client and Volunteer management system built for LBSA in Drupal
+%\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\runsubsection{National University of Singapore}\\
+\location{Jan 2022 - Present}
+\descript{Master of Computing - AI Specialisation}
+ \sectionsep
+
+\runsubsection{National University of Singapore}\\
+\location{Aug 2012 - July 2016}
+\descript{BComp Honours (Distinction) in Computer Science}
+
+
+\textbf{Focus Areas: } Computer Security, Algorithms and Theory, Programming Languages
+ \sectionsep
+
+\runsubsection{NUS High School of Mathematics and Science}\\
+\location{Jan 2006  - Nov 2011}
+\descript{Distinction}
+\descript{Honours in Mathematics, Physics and Chemistry; Major in Biology}
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Projects}
+%\runsubsection{Likesumo}
+%\location{October 2015 - Nov 2015}
+%Application which gathers customer posts on a company's social media (Facebook/ Twitter) page and %displays selected reviews on a widget embedded on the company's website.
+%\sectionsep
+
+%\runsubsection{HubTurbo}
+%\location{Jul 2014 - Aug 2014}
+%Worked with 3 others to create HubTurbo, a desktop GitHub issue management application built with %Java 8 FX.
+%\sectionsep
+
+%\runsubsection{BitByBeat}
+%\location{Mar 2014 - Jun 2014}
+%Worked with 2 others to develop an iOS workout application to be used for research into the %correlation between music and exercise.
+%\sectionsep
+
+\section{Past Research}
+\runsubsection{Support for PROGMEM}\\
+\location{Aug 2015 - Apr 2015}
+Implementation of a tool which transforms Arduino sketches into an equivalent form which requires less runtime SRAM by making use of the .progmem section of flash memory.
+\sectionsep
+
+\runsubsection{Design of a Concurrency Control Protocol for SonSQL}\\
+\location{Jan 2014 - Nov 2014}
+Designing an early lock release concurrency control algorithm for a known schema, with the requirement that transaction serialisability is not violated
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Publications}
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
